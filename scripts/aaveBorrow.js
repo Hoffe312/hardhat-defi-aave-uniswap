@@ -145,6 +145,8 @@ async function uniswap(amount, deployer) {
     const tx = await uniswap.swapExactETHForTokens(String(amountOutMin), path, to, deadline, {
         value: String(value),
     })
+    await tx.wait(1)
+    console.log("Successfully swapped on Uniswap!")
 }
 
 main()
