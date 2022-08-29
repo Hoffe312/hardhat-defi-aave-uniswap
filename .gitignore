@@ -1,0 +1,6 @@
+/.env
+/.prettierignore
+/artifacts
+/cache
+/deploy
+/node_modules
